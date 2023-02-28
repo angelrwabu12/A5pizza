@@ -6,6 +6,7 @@ class PizzaStock(models.Model):
     pizza_type=models.CharField(max_length=130)
     pizza_size=models.CharField(max_length=50)
     quantity=models.IntegerField()
+    description=models.CharField(max_length=100,null=True)
     def __str__(self):
         return self.pizza_name
 # Create your models here.
