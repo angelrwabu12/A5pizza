@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<ul>
+    <li>pizza_name:{{ pizza.pizza_name}}</li>
+    <li>pizza_price:{{ pizza.pizza_price}}</li>
+    <li>pizza_size:{{pizza.pizza_size}}</li>
+    <li>pizza_details:{{ pizza.description}}</li>
+</ul>
+
+{% endblock %}
