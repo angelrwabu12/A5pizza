@@ -65,6 +65,10 @@ h2{
     text-align:left;
     background-color: #ebe9e9;
   }
+  .card:h4{
+    color: #8e1988;
+  }
+  
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {

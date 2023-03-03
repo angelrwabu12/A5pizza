@@ -5,7 +5,7 @@
         {% for pizza in pizzas %}
         <div class="column">
           <div class="card">
-            <a href="{%url 'pizzadetail' pizza.id %}"
+            <a href="{%url 'pizzadetail' pizza.id %}">
             <h3>{{ pizza.pizza_name }}</h3></a><br>Pizza
             <h1>{{ pizza.pizza_price}}</h1>
             <h4>{{ pizza.pizza_size }}</h4>
