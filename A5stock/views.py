@@ -21,6 +21,8 @@ def registration(request):
     return render(request, 'registration.html', {'form':form})
 def login(request):
     return render(request, 'login.html')
+def logout(request):
+    return render(request, 'logout.html')
 def pizzadetail(request,pk):
     pizza=get_object_or_404(PizzaStock,pk=pk)
     return render(request,'pizzadetail.html',{'pizza':pizza})
