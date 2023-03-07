@@ -6,6 +6,8 @@
     <li>pizza_price:{{ pizza.pizza_price}}</li>
     <li>pizza_size:{{pizza.pizza_size}}</li>
     <li>pizza_details:{{ pizza.description}}</li>
+    <button type='submit'> <a href="{%url 'delete' pizza.id %}"> DELETE</button></a>
+    <button type='submit'> <a href="{%url 'update' pizza.id %}"> UPDATE</button></a>
 </ul>
 
 {% endblock %}

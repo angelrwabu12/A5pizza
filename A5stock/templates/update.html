@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<h1>Update pizza here........</h1>
+
+        <div class="content-section">
+            <form action="" method='POST'>
+                {%csrf_token%}
+                <form>
+                {{ form.as_p }}
+
+                    <button class="btn btn-outline-info" type="submit">UPDATE</button>
+                </div>
+            </form>
+        </div>
+
+{% endblock %}

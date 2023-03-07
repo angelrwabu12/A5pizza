@@ -26,5 +26,14 @@ def logout(request):
 def pizzadetail(request,pk):
     pizza=get_object_or_404(PizzaStock,pk=pk)
     return render(request,'pizzadetail.html',{'pizza':pizza})
-
-    
+def delete(request,pk):
+    pizzaa=get_object_or_404(PizzaStock,pk=pk)
+    pizzaa.delete()
+    return redirect('/')
+def update(request,pk):
+    pizaa = get_object_or_404(PizzaStock, pk=pk)
+    form=PizzaForm(request.POST or None, instance=pizaa)
+    if form.is_valid():
+            form.save()
+            return redirect('/')
+    return render(request,'update.html',{'form':form})
